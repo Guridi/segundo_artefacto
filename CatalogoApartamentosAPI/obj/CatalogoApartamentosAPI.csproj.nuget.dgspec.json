@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/CatalogoApartamentosAPI.csproj": {}
+    "/home/antoniog/Documents/Codigo/Prog 2/segundo_artefacto/CatalogoApartamentosAPI/CatalogoApartamentosAPI.csproj": {}
   },
   "projects": {
-    "/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/CatalogoApartamentosAPI.csproj": {
+    "/home/antoniog/Documents/Codigo/Prog 2/segundo_artefacto/CatalogoApartamentosAPI/CatalogoApartamentosAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/CatalogoApartamentosAPI.csproj",
+        "projectUniqueName": "/home/antoniog/Documents/Codigo/Prog 2/segundo_artefacto/CatalogoApartamentosAPI/CatalogoApartamentosAPI.csproj",
         "projectName": "CatalogoApartamentosAPI",
-        "projectPath": "/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/CatalogoApartamentosAPI.csproj",
+        "projectPath": "/home/antoniog/Documents/Codigo/Prog 2/segundo_artefacto/CatalogoApartamentosAPI/CatalogoApartamentosAPI.csproj",
         "packagesPath": "/home/antoniog/.nuget/packages/",
-        "outputPath": "/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/obj/",
+        "outputPath": "/home/antoniog/Documents/Codigo/Prog 2/segundo_artefacto/CatalogoApartamentosAPI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/antoniog/.nuget/NuGet/NuGet.Config"

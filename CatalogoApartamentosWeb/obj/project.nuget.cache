@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rxcb5zqwxZk=",
+  "dgSpecHash": "FzfLuzeztv8=",
   "success": true,
-  "projectFilePath": "/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosWeb/CatalogoApartamentosWeb.csproj",
+  "projectFilePath": "/home/antoniog/Documents/Codigo/Prog 2/segundo_artefacto/CatalogoApartamentosWeb/CatalogoApartamentosWeb.csproj",
   "expectedPackageFiles": [
     "/home/antoniog/.nuget/packages/microsoft.aspnetcore.app.internal.assets/10.0.12/microsoft.aspnetcore.app.internal.assets.10.0.12.nupkg.sha512",
     "/home/antoniog/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.12/microsoft.aspnetcore.app.ref.10.0.12.nupkg.sha512"

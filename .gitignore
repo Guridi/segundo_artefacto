@@ -1,0 +1,43 @@
+# Compilación .NET
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+[Ll]og/
+[Ll]ogs/
+*.nupkg
+*.snupkg
+project.lock.json
+artifacts/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+
+# JetBrains Rider
+.idea/
+*.DotSettings.user
+*.sln.iml
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Claude Code (configuración local)
+.claude/settings.local.json
+
+# Secretos y configuración local
+appsettings.*.local.json
+*.env
+.env
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
