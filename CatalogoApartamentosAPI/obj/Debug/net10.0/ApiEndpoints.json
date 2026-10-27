@@ -1,0 +1,160 @@
+[
+  {
+    "ContainingType": "CatalogoApartamentosAPI.Controllers.ApartamentosController",
+    "Method": "GetApartamentos",
+    "RelativePath": "api/Apartamentos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CatalogoApartamentosAPI.Controllers.ApartamentosController",
+    "Method": "CrearApartamento",
+    "RelativePath": "api/Apartamentos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "apartamento",
+        "Type": "CatalogoApartamentosAPI.Models.Apartamento",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CatalogoApartamentosAPI.Controllers.ApartamentosController",
+    "Method": "GetApartamentoById",
+    "RelativePath": "api/Apartamentos/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CatalogoApartamentosAPI.Controllers.ApartamentosController",
+    "Method": "ActualizarApartamento",
+    "RelativePath": "api/Apartamentos/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "apartamento",
+        "Type": "CatalogoApartamentosAPI.Models.Apartamento",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CatalogoApartamentosAPI.Controllers.ApartamentosController",
+    "Method": "EliminarApartamento",
+    "RelativePath": "api/Apartamentos/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CatalogoApartamentosAPI.Controllers.ResidencialesController",
+    "Method": "GetResidenciales",
+    "RelativePath": "api/Residenciales",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CatalogoApartamentosAPI.Controllers.ResidencialesController",
+    "Method": "CrearResidencial",
+    "RelativePath": "api/Residenciales",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "residencial",
+        "Type": "CatalogoApartamentosAPI.Models.Residencial",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CatalogoApartamentosAPI.Controllers.ResidencialesController",
+    "Method": "GetResidencialById",
+    "RelativePath": "api/Residenciales/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CatalogoApartamentosAPI.Controllers.ResidencialesController",
+    "Method": "ActualizarResidencial",
+    "RelativePath": "api/Residenciales/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "residencial",
+        "Type": "CatalogoApartamentosAPI.Models.Residencial",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CatalogoApartamentosAPI.Controllers.ResidencialesController",
+    "Method": "EliminarResidencial",
+    "RelativePath": "api/Residenciales/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

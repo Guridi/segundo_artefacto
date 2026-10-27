@@ -1,0 +1,16 @@
+<article class="tarjeta-caracteristica">
+    <div class="icono">@Icono</div>
+    <h3>@Titulo</h3>
+    <p>@ChildContent</p>
+</article>
+
+@code {
+    [Parameter, EditorRequired]
+    public string Titulo { get; set; } = string.Empty;
+
+    [Parameter]
+    public string Icono { get; set; } = "🏠";
+
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+}

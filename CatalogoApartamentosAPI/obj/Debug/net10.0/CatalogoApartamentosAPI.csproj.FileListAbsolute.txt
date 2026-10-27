@@ -1,0 +1,142 @@
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/appsettings.json
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/CatalogoApartamentosAPI.staticwebassets.endpoints.json
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/CatalogoApartamentosAPI.exe
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/CatalogoApartamentosAPI.deps.json
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/CatalogoApartamentosAPI.runtimeconfig.json
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/CatalogoApartamentosAPI.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/CatalogoApartamentosAPI.pdb
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/Microsoft.AspNetCore.OpenApi.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/Microsoft.Bcl.Cryptography.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/Microsoft.Data.SqlClient.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/Microsoft.Data.SqlClient.Extensions.Abstractions.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/Microsoft.Data.SqlClient.Internal.Logging.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/Microsoft.IdentityModel.Abstractions.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/Microsoft.IdentityModel.JsonWebTokens.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/Microsoft.IdentityModel.Logging.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/Microsoft.IdentityModel.Protocols.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/Microsoft.IdentityModel.Tokens.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/Microsoft.OpenApi.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/Microsoft.SqlServer.Server.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/Swashbuckle.AspNetCore.Swagger.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/System.Configuration.ConfigurationManager.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/System.IdentityModel.Tokens.Jwt.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/System.Security.Cryptography.ProtectedData.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/cs/Microsoft.Data.SqlClient.resources.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/de/Microsoft.Data.SqlClient.resources.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/es/Microsoft.Data.SqlClient.resources.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/fr/Microsoft.Data.SqlClient.resources.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/it/Microsoft.Data.SqlClient.resources.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/ja/Microsoft.Data.SqlClient.resources.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/ko/Microsoft.Data.SqlClient.resources.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/pl/Microsoft.Data.SqlClient.resources.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/pt-BR/Microsoft.Data.SqlClient.resources.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/ru/Microsoft.Data.SqlClient.resources.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/tr/Microsoft.Data.SqlClient.resources.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/zh-Hans/Microsoft.Data.SqlClient.resources.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/zh-Hant/Microsoft.Data.SqlClient.resources.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/runtimes/unix/lib/net9.0/Microsoft.Data.SqlClient.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/runtimes/win/lib/net9.0/Microsoft.Data.SqlClient.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/bin/Debug/net10.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/obj/Debug/net10.0/CatalogoApartamentosAPI.csproj.AssemblyReference.cache
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/obj/Debug/net10.0/rpswa.dswa.cache.json
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/obj/Debug/net10.0/CatalogoApartamentosAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/obj/Debug/net10.0/CatalogoApartamentosAPI.AssemblyInfoInputs.cache
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/obj/Debug/net10.0/CatalogoApartamentosAPI.AssemblyInfo.cs
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/obj/Debug/net10.0/CatalogoApartamentosAPI.csproj.CoreCompileInputs.cache
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/obj/Debug/net10.0/CatalogoApartamentosAPI.MvcApplicationPartsAssemblyInfo.cs
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/obj/Debug/net10.0/CatalogoApartamentosAPI.MvcApplicationPartsAssemblyInfo.cache
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/obj/Debug/net10.0/rjimswa.dswa.cache.json
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/obj/Debug/net10.0/rjsmrazor.dswa.cache.json
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/obj/Debug/net10.0/scopedcss/bundle/CatalogoApartamentosAPI.styles.css
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/obj/Debug/net10.0/staticwebassets.build.json
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/obj/Debug/net10.0/staticwebassets.build.json.cache
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/obj/Debug/net10.0/staticwebassets.development.json
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/obj/Debug/net10.0/staticwebassets.build.endpoints.json
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/obj/Debug/net10.0/swae.build.ex.cache
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/obj/Debug/net10.0/Catalogo.E0FF6EAC.Up2Date
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/obj/Debug/net10.0/CatalogoApartamentosAPI.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/obj/Debug/net10.0/refint/CatalogoApartamentosAPI.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/obj/Debug/net10.0/CatalogoApartamentosAPI.pdb
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/obj/Debug/net10.0/CatalogoApartamentosAPI.genruntimeconfig.cache
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/obj/Debug/net10.0/ref/CatalogoApartamentosAPI.dll
+D:/Backendprueba/Asignacion/CatalogoApartamentosAPI/obj/Debug/net10.0/staticwebassets.upToDateCheck.txt
+/tmp/claude-1000/-home-antoniog-Documents-Codigo-Prog-2-CatalogoApartamentosAPI/9c3c9561-5db7-4a46-8c7d-f3b7822aea7d/scratchpad/build/appsettings.json
+/tmp/claude-1000/-home-antoniog-Documents-Codigo-Prog-2-CatalogoApartamentosAPI/9c3c9561-5db7-4a46-8c7d-f3b7822aea7d/scratchpad/build/CatalogoApartamentosAPI.staticwebassets.endpoints.json
+/tmp/claude-1000/-home-antoniog-Documents-Codigo-Prog-2-CatalogoApartamentosAPI/9c3c9561-5db7-4a46-8c7d-f3b7822aea7d/scratchpad/build/CatalogoApartamentosAPI
+/tmp/claude-1000/-home-antoniog-Documents-Codigo-Prog-2-CatalogoApartamentosAPI/9c3c9561-5db7-4a46-8c7d-f3b7822aea7d/scratchpad/build/CatalogoApartamentosAPI.deps.json
+/tmp/claude-1000/-home-antoniog-Documents-Codigo-Prog-2-CatalogoApartamentosAPI/9c3c9561-5db7-4a46-8c7d-f3b7822aea7d/scratchpad/build/CatalogoApartamentosAPI.runtimeconfig.json
+/tmp/claude-1000/-home-antoniog-Documents-Codigo-Prog-2-CatalogoApartamentosAPI/9c3c9561-5db7-4a46-8c7d-f3b7822aea7d/scratchpad/build/CatalogoApartamentosAPI.dll
+/tmp/claude-1000/-home-antoniog-Documents-Codigo-Prog-2-CatalogoApartamentosAPI/9c3c9561-5db7-4a46-8c7d-f3b7822aea7d/scratchpad/build/CatalogoApartamentosAPI.pdb
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/obj/Debug/net10.0/CatalogoApartamentosAPI.csproj.AssemblyReference.cache
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/obj/Debug/net10.0/rpswa.dswa.cache.json
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/obj/Debug/net10.0/CatalogoApartamentosAPI.GeneratedMSBuildEditorConfig.editorconfig
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/obj/Debug/net10.0/CatalogoApartamentosAPI.AssemblyInfoInputs.cache
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/obj/Debug/net10.0/CatalogoApartamentosAPI.AssemblyInfo.cs
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/obj/Debug/net10.0/CatalogoApartamentosAPI.csproj.CoreCompileInputs.cache
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/obj/Debug/net10.0/CatalogoApartamentosAPI.MvcApplicationPartsAssemblyInfo.cs
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/obj/Debug/net10.0/CatalogoApartamentosAPI.MvcApplicationPartsAssemblyInfo.cache
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/obj/Debug/net10.0/rjimswa.dswa.cache.json
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/obj/Debug/net10.0/rjsmrazor.dswa.cache.json
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/obj/Debug/net10.0/scopedcss/bundle/CatalogoApartamentosAPI.styles.css
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/obj/Debug/net10.0/staticwebassets.build.json
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/obj/Debug/net10.0/staticwebassets.build.json.cache
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/obj/Debug/net10.0/staticwebassets.development.json
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/obj/Debug/net10.0/staticwebassets.build.endpoints.json
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/obj/Debug/net10.0/swae.build.ex.cache
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/obj/Debug/net10.0/Catalogo.E0FF6EAC.Up2Date
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/obj/Debug/net10.0/CatalogoApartamentosAPI.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/obj/Debug/net10.0/refint/CatalogoApartamentosAPI.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/obj/Debug/net10.0/CatalogoApartamentosAPI.pdb
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/obj/Debug/net10.0/CatalogoApartamentosAPI.genruntimeconfig.cache
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/obj/Debug/net10.0/ref/CatalogoApartamentosAPI.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/appsettings.json
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/CatalogoApartamentosAPI.staticwebassets.endpoints.json
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/CatalogoApartamentosAPI
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/CatalogoApartamentosAPI.deps.json
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/CatalogoApartamentosAPI.runtimeconfig.json
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/CatalogoApartamentosAPI.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/CatalogoApartamentosAPI.pdb
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/Microsoft.AspNetCore.OpenApi.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/Microsoft.Bcl.Cryptography.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/Microsoft.Data.SqlClient.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/Microsoft.Data.SqlClient.Extensions.Abstractions.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/Microsoft.Data.SqlClient.Internal.Logging.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/Microsoft.IdentityModel.Abstractions.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/Microsoft.IdentityModel.Logging.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/Microsoft.IdentityModel.Protocols.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/Microsoft.IdentityModel.Tokens.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/Microsoft.OpenApi.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/Microsoft.SqlServer.Server.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/Swashbuckle.AspNetCore.Swagger.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/System.Configuration.ConfigurationManager.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/System.IdentityModel.Tokens.Jwt.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/System.Security.Cryptography.ProtectedData.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/cs/Microsoft.Data.SqlClient.resources.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/de/Microsoft.Data.SqlClient.resources.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/es/Microsoft.Data.SqlClient.resources.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/fr/Microsoft.Data.SqlClient.resources.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/it/Microsoft.Data.SqlClient.resources.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/ja/Microsoft.Data.SqlClient.resources.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/ko/Microsoft.Data.SqlClient.resources.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/pl/Microsoft.Data.SqlClient.resources.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/pt-BR/Microsoft.Data.SqlClient.resources.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/ru/Microsoft.Data.SqlClient.resources.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/tr/Microsoft.Data.SqlClient.resources.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/zh-Hans/Microsoft.Data.SqlClient.resources.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/zh-Hant/Microsoft.Data.SqlClient.resources.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/runtimes/unix/lib/net9.0/Microsoft.Data.SqlClient.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/runtimes/win/lib/net9.0/Microsoft.Data.SqlClient.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosAPI/bin/Debug/net10.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll

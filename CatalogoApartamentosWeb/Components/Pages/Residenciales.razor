@@ -1,0 +1,88 @@
+@page "/residenciales"
+@inject ICatalogoApiService CatalogoService
+@inject NavigationManager Navigation
+
+<PageTitle>Residenciales · @NombreSitio</PageTitle>
+
+<section class="container py-4">
+    <div class="encabezado-pagina">
+        <h1>Residenciales</h1>
+        <p class="text-muted">Explora los residenciales disponibles y sus apartamentos.</p>
+    </div>
+
+    <BuscadorResidencial OnBuscar="Buscar" />
+
+    <MensajeEstado Cargando="cargando"
+                   Error="@error"
+                   Vacio="residencialesFiltrados.Count == 0"
+                   MensajeVacio="@(string.IsNullOrEmpty(busqueda) ? "No hay residenciales registrados." : $"No hay residenciales que coincidan con \"{busqueda}\".")"
+                   OnReintentar="CargarAsync">
+        <div class="grid-residenciales">
+            @foreach (var residencial in residencialesFiltrados)
+            {
+                <TarjetaResidencial Residencial="residencial"
+                                    CantidadApartamentos="@ContarApartamentos(residencial.Id)"
+                                    OnVerApartamentos="VerApartamentos" />
+            }
+        </div>
+    </MensajeEstado>
+</section>
+
+@code {
+    [CascadingParameter(Name = "NombreSitio")]
+    public string NombreSitio { get; set; } = string.Empty;
+
+    private List<Residencial> residenciales = [];
+    private List<Residencial> residencialesFiltrados = [];
+    private List<Apartamento> apartamentos = [];
+    private string busqueda = string.Empty;
+    private bool cargando = true;
+    private string? error;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await CargarAsync();
+    }
+
+    private async Task CargarAsync()
+    {
+        cargando = true;
+        error = null;
+
+        try
+        {
+            residenciales = await CatalogoService.GetResidencialesAsync();
+            apartamentos = await CatalogoService.GetApartamentosAsync();
+            Buscar(busqueda);
+        }
+        catch (Exception)
+        {
+            error = "No se pudo conectar con el Web API. Verifique que esté en ejecución.";
+        }
+        finally
+        {
+            cargando = false;
+        }
+    }
+
+    // Recibe el texto desde BuscadorResidencial (comunicación hijo → padre).
+    private void Buscar(string texto)
+    {
+        busqueda = texto.Trim();
+
+        residencialesFiltrados = string.IsNullOrEmpty(busqueda)
+            ? residenciales
+            : residenciales
+                .Where(r => r.Nombre.Contains(busqueda, StringComparison.OrdinalIgnoreCase)
+                         || r.Ubicacion.Contains(busqueda, StringComparison.OrdinalIgnoreCase))
+                .ToList();
+    }
+
+    private int ContarApartamentos(int residencialId) =>
+        apartamentos.Count(a => a.ResidencialId == residencialId);
+
+    private void VerApartamentos(int residencialId)
+    {
+        Navigation.NavigateTo($"apartamentos?residencialId={residencialId}");
+    }
+}

@@ -1,0 +1,396 @@
+/* Tema del Catálogo de Apartamentos */
+:root {
+    --color-primario: #1f4e79;
+    --color-primario-oscuro: #163a5a;
+    --color-acento: #f2a541;
+    --color-fondo: #f5f7fa;
+    --color-texto: #1d2733;
+    --radio: 14px;
+    --sombra: 0 6px 20px rgba(31, 78, 121, 0.12);
+}
+
+html, body {
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+    background: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+.btn-primary {
+    background-color: var(--color-primario);
+    border-color: var(--color-primario);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primario-oscuro);
+    border-color: var(--color-primario-oscuro);
+}
+
+.sitio {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.contenido {
+    flex: 1;
+}
+
+/* ---------- Header ---------- */
+.encabezado {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--color-primario);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.encabezado-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 0.75rem;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.marca:hover {
+    color: var(--color-acento);
+}
+
+.navegacion {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.navegacion a {
+    color: rgba(255, 255, 255, 0.85);
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navegacion a:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.navegacion a.active {
+    color: var(--color-primario);
+    background: var(--color-acento);
+}
+
+.menu-boton {
+    display: none;
+    background: none;
+    border: 0;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+@media (max-width: 720px) {
+    .encabezado-contenido {
+        flex-wrap: wrap;
+    }
+
+    .menu-boton {
+        display: block;
+    }
+
+    .navegacion {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 0.5rem;
+    }
+
+    .navegacion.abierta {
+        display: flex;
+    }
+}
+
+/* ---------- Footer ---------- */
+.pie {
+    background: var(--color-texto);
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 3rem;
+}
+
+.pie-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-block: 1.5rem;
+}
+
+.pie p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.pie strong {
+    color: var(--color-acento);
+}
+
+/* ---------- Landing ---------- */
+.hero {
+    background: linear-gradient(135deg, var(--color-primario) 0%, #2e75b6 100%);
+    color: #fff;
+}
+
+.hero-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-block: 3.5rem;
+}
+
+.hero-texto {
+    flex: 1 1 320px;
+}
+
+.hero-texto h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 800;
+}
+
+.hero-texto p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+}
+
+.hero-etiqueta {
+    color: var(--color-acento);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.hero-imagen {
+    flex: 1 1 320px;
+    max-width: 460px;
+}
+
+.caracteristicas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-top: -2rem;
+}
+
+.tarjeta-caracteristica {
+    background: #fff;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    padding: 1.5rem;
+}
+
+.tarjeta-caracteristica .icono {
+    font-size: 2rem;
+}
+
+.tarjeta-caracteristica h3 {
+    font-size: 1.15rem;
+    margin-top: 0.5rem;
+}
+
+.resumen {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.resumen-cifras {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.cifra {
+    background: #fff;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    padding: 1.5rem;
+    font-weight: 500;
+}
+
+.cifra span {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--color-primario);
+}
+
+.cifra.destacada span {
+    color: #2e9e5b;
+}
+
+/* ---------- Páginas internas ---------- */
+.encabezado-pagina {
+    margin-bottom: 1.5rem;
+}
+
+.encabezado-pagina h1 {
+    font-weight: 800;
+    color: var(--color-primario);
+}
+
+.estado {
+    text-align: center;
+    padding: 3rem 0;
+    color: #6c7a89;
+}
+
+.buscador {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.grid-residenciales {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.tarjeta-residencial {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.tarjeta-residencial:hover {
+    transform: translateY(-4px);
+}
+
+.tarjeta-residencial img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    background: #dfe8f1;
+}
+
+.tarjeta-residencial .cuerpo {
+    flex: 1;
+    padding: 1.25rem;
+}
+
+.tarjeta-residencial h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.tarjeta-residencial .ubicacion {
+    color: #6c7a89;
+    font-size: 0.9rem;
+}
+
+.pie-tarjeta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.25rem 1.25rem;
+}
+
+.panel-filtros {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 1.5rem;
+    background: #fff;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.panel-filtros .campo {
+    flex: 1 1 260px;
+}
+
+.tabla-apartamentos {
+    background: #fff;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    padding: 0.5rem 1rem;
+}
+
+.tabla-apartamentos tr.resaltado td {
+    background: #fff4e0;
+}
+
+.formulario-apartamento {
+    background: #fff;
+    border-left: 5px solid var(--color-acento);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.formulario-apartamento h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* ---------- Toast (manejado desde js/site.js) ---------- */
+.toast-catalogo {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    z-index: 2000;
+    background: #2e9e5b;
+    color: #fff;
+    padding: 0.85rem 1.25rem;
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.toast-catalogo.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ---------- Error de Blazor ---------- */
+#blazor-error-ui {
+    color-scheme: light only;
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+#blazor-error-ui .dismiss {
+    cursor: pointer;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.5rem;
+}

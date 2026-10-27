@@ -1,0 +1,101 @@
+@page "/apartamentos"
+@inject ICatalogoApiService CatalogoService
+@inject IJSRuntime JS
+
+<PageTitle>Apartamentos · @NombreSitio</PageTitle>
+
+<section class="container py-4">
+    <div class="encabezado-pagina d-flex flex-wrap justify-content-between align-items-end gap-3">
+        <div>
+            <h1>Apartamentos</h1>
+            <p class="text-muted mb-0">Consulta los apartamentos y registra nuevos en el catálogo.</p>
+        </div>
+        @if (!mostrarFormulario)
+        {
+            <button class="btn btn-primary" @onclick="() => mostrarFormulario = true">+ Nuevo apartamento</button>
+        }
+    </div>
+
+    @if (mostrarFormulario)
+    {
+        <FormularioApartamento Residenciales="residenciales"
+                               ResidencialIdInicial="filtro.ResidencialId"
+                               OnApartamentoCreado="ApartamentoCreado"
+                               OnCancelar="() => mostrarFormulario = false" />
+    }
+
+    <PanelFiltros Residenciales="residenciales"
+                  Filtro="filtro"
+                  OnFiltroCambiado="FiltroCambiado" />
+
+    <MensajeEstado Cargando="cargando"
+                   Error="@error"
+                   Vacio="apartamentos.Count == 0"
+                   MensajeVacio="No hay apartamentos que coincidan con el filtro."
+                   OnReintentar="CargarAsync">
+        <TablaApartamentos Apartamentos="apartamentos"
+                           Residenciales="residenciales"
+                           IdResaltado="idResaltado" />
+    </MensajeEstado>
+</section>
+
+@code {
+    [CascadingParameter(Name = "NombreSitio")]
+    public string NombreSitio { get; set; } = string.Empty;
+
+    // Llega desde la página de residenciales: /apartamentos?residencialId=1
+    [SupplyParameterFromQuery]
+    public int? ResidencialId { get; set; }
+
+    private List<Residencial> residenciales = [];
+    private List<Apartamento> apartamentos = [];
+    private FiltroApartamentos filtro = new();
+    private bool cargando = true;
+    private bool mostrarFormulario;
+    private string? error;
+    private int? idResaltado;
+
+    // Se usa OnParametersSetAsync para reaccionar también al cambiar el query string.
+    protected override async Task OnParametersSetAsync()
+    {
+        filtro = new FiltroApartamentos { ResidencialId = ResidencialId };
+        await CargarAsync();
+    }
+
+    private async Task CargarAsync()
+    {
+        cargando = true;
+        error = null;
+
+        try
+        {
+            residenciales = await CatalogoService.GetResidencialesAsync();
+            apartamentos = await CatalogoService.GetApartamentosAsync(filtro);
+        }
+        catch (Exception)
+        {
+            error = "No se pudo conectar con el Web API. Verifique que esté en ejecución.";
+        }
+        finally
+        {
+            cargando = false;
+        }
+    }
+
+    // Recibe el filtro desde PanelFiltros (comunicación hijo → padre).
+    private async Task FiltroCambiado(FiltroApartamentos nuevoFiltro)
+    {
+        filtro = nuevoFiltro;
+        await CargarAsync();
+    }
+
+    // Recibe el apartamento creado desde FormularioApartamento.
+    private async Task ApartamentoCreado(Apartamento creado)
+    {
+        mostrarFormulario = false;
+        idResaltado = creado.Id;
+
+        await CargarAsync();
+        await JS.InvokeVoidAsync("catalogo.mostrarToast", $"Apartamento {creado.Numero} creado correctamente.");
+    }
+}

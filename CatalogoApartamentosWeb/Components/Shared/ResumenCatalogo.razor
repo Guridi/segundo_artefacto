@@ -1,0 +1,60 @@
+@inject ICatalogoApiService CatalogoService
+
+<section class="resumen">
+    <h2>El catálogo en números</h2>
+    <p class="text-muted">Datos obtenidos en tiempo real desde el Web API.</p>
+
+    <MensajeEstado Cargando="cargando" Error="@error" OnReintentar="CargarAsync">
+        <div class="resumen-cifras">
+            <div class="cifra">
+                <span>@totalResidenciales</span>
+                Residenciales
+            </div>
+            <div class="cifra">
+                <span>@totalApartamentos</span>
+                Apartamentos
+            </div>
+            <div class="cifra destacada">
+                <span>@totalDisponibles</span>
+                Disponibles
+            </div>
+        </div>
+    </MensajeEstado>
+</section>
+
+@code {
+    private bool cargando = true;
+    private string? error;
+    private int totalResidenciales;
+    private int totalApartamentos;
+    private int totalDisponibles;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await CargarAsync();
+    }
+
+    private async Task CargarAsync()
+    {
+        cargando = true;
+        error = null;
+
+        try
+        {
+            var residenciales = await CatalogoService.GetResidencialesAsync();
+            var apartamentos = await CatalogoService.GetApartamentosAsync();
+
+            totalResidenciales = residenciales.Count;
+            totalApartamentos = apartamentos.Count;
+            totalDisponibles = apartamentos.Count(a => a.Disponible);
+        }
+        catch (Exception)
+        {
+            error = "No se pudo conectar con el Web API. Verifique que esté en ejecución.";
+        }
+        finally
+        {
+            cargando = false;
+        }
+    }
+}

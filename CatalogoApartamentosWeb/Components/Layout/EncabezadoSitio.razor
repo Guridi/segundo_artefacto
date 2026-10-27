@@ -1,0 +1,29 @@
+<header class="encabezado">
+    <div class="container encabezado-contenido">
+        <a class="marca" href="">
+            <img src="img/logo.svg" alt="Logo" width="40" height="40" />
+            <span>@NombreSitio</span>
+        </a>
+
+        <button class="menu-boton" type="button" aria-label="Abrir menú" @onclick="AlternarMenu">
+            ☰
+        </button>
+
+        <nav class="navegacion @(menuAbierto ? "abierta" : "")" @onclick="CerrarMenu">
+            <NavLink href="" Match="NavLinkMatch.All">Inicio</NavLink>
+            <NavLink href="residenciales">Residenciales</NavLink>
+            <NavLink href="apartamentos">Apartamentos</NavLink>
+        </nav>
+    </div>
+</header>
+
+@code {
+    [CascadingParameter(Name = "NombreSitio")]
+    public string NombreSitio { get; set; } = string.Empty;
+
+    private bool menuAbierto;
+
+    private void AlternarMenu() => menuAbierto = !menuAbierto;
+
+    private void CerrarMenu() => menuAbierto = false;
+}

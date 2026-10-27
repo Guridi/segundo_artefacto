@@ -1,0 +1,113 @@
+@inject ICatalogoApiService CatalogoService
+
+<div class="formulario-apartamento">
+    <h3>Nuevo apartamento</h3>
+
+    <EditForm Model="apartamento" OnValidSubmit="GuardarAsync" FormName="nuevo-apartamento">
+        <DataAnnotationsValidator />
+
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label class="form-label" for="numero">Número</label>
+                <InputText id="numero" class="form-control" @bind-Value="apartamento.Numero" />
+                <ValidationMessage For="() => apartamento.Numero" />
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label" for="residencial">Residencial</label>
+                <InputSelect id="residencial" class="form-select" @bind-Value="apartamento.ResidencialId">
+                    <option value="0">Seleccione…</option>
+                    @foreach (var residencial in Residenciales)
+                    {
+                        <option value="@residencial.Id">@residencial.Nombre</option>
+                    }
+                </InputSelect>
+                <ValidationMessage For="() => apartamento.ResidencialId" />
+            </div>
+
+            <div class="col-md-4">
+                <label class="form-label" for="habitaciones">Habitaciones</label>
+                <InputNumber id="habitaciones" class="form-control" @bind-Value="apartamento.Habitaciones" />
+                <ValidationMessage For="() => apartamento.Habitaciones" />
+            </div>
+
+            <div class="col-md-4">
+                <label class="form-label" for="banos">Baños</label>
+                <InputNumber id="banos" class="form-control" @bind-Value="apartamento.Banos" />
+                <ValidationMessage For="() => apartamento.Banos" />
+            </div>
+
+            <div class="col-md-4">
+                <label class="form-label" for="precio">Precio</label>
+                <InputNumber id="precio" class="form-control" @bind-Value="apartamento.Precio" />
+                <ValidationMessage For="() => apartamento.Precio" />
+            </div>
+
+            <div class="col-12 form-check form-switch ms-2">
+                <InputCheckbox id="disponible" class="form-check-input" @bind-Value="apartamento.Disponible" />
+                <label class="form-check-label" for="disponible">Disponible</label>
+            </div>
+        </div>
+
+        @if (!string.IsNullOrEmpty(error))
+        {
+            <div class="alert alert-danger mt-3">@error</div>
+        }
+
+        <div class="d-flex gap-2 mt-3">
+            <button class="btn btn-primary" type="submit" disabled="@guardando">
+                @(guardando ? "Guardando…" : "Guardar")
+            </button>
+            <button class="btn btn-outline-secondary" type="button" @onclick="OnCancelar">Cancelar</button>
+        </div>
+    </EditForm>
+</div>
+
+@code {
+    [Parameter]
+    public List<Residencial> Residenciales { get; set; } = [];
+
+    [Parameter]
+    public int? ResidencialIdInicial { get; set; }
+
+    [Parameter]
+    public EventCallback<Apartamento> OnApartamentoCreado { get; set; }
+
+    [Parameter]
+    public EventCallback OnCancelar { get; set; }
+
+    private Apartamento apartamento = new();
+    private bool guardando;
+    private string? error;
+
+    protected override void OnInitialized()
+    {
+        apartamento.ResidencialId = ResidencialIdInicial ?? 0;
+    }
+
+    private async Task GuardarAsync()
+    {
+        guardando = true;
+        error = null;
+
+        try
+        {
+            var creado = await CatalogoService.CrearApartamentoAsync(apartamento);
+            await OnApartamentoCreado.InvokeAsync(creado);
+
+            apartamento = new Apartamento { ResidencialId = creado.ResidencialId };
+        }
+        catch (InvalidOperationException ex)
+        {
+            error = ex.Message;
+        }
+        catch (Exception)
+        {
+            error = "No se pudo guardar el apartamento. Verifique la conexión con el Web API.";
+        }
+        finally
+        {
+            guardando = false;
+        }
+    }
+}

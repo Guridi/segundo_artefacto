@@ -1,0 +1,51 @@
+<div class="panel-filtros">
+    <div class="campo">
+        <label class="form-label" for="filtro-residencial">Residencial</label>
+        <select id="filtro-residencial"
+                class="form-select"
+                @bind="residencialId"
+                @bind:after="NotificarCambio">
+            <option value="">Todos los residenciales</option>
+            @foreach (var residencial in Residenciales)
+            {
+                <option value="@residencial.Id">@residencial.Nombre</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-check form-switch">
+        <input id="filtro-disponibles"
+               class="form-check-input"
+               type="checkbox"
+               @bind="soloDisponibles"
+               @bind:after="NotificarCambio" />
+        <label class="form-check-label" for="filtro-disponibles">Solo disponibles</label>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public List<Residencial> Residenciales { get; set; } = [];
+
+    [Parameter]
+    public FiltroApartamentos Filtro { get; set; } = new();
+
+    [Parameter]
+    public EventCallback<FiltroApartamentos> OnFiltroCambiado { get; set; }
+
+    private int? residencialId;
+    private bool soloDisponibles;
+
+    protected override void OnParametersSet()
+    {
+        residencialId = Filtro.ResidencialId;
+        soloDisponibles = Filtro.SoloDisponibles;
+    }
+
+    private Task NotificarCambio() =>
+        OnFiltroCambiado.InvokeAsync(new FiltroApartamentos
+        {
+            ResidencialId = residencialId,
+            SoloDisponibles = soloDisponibles
+        });
+}

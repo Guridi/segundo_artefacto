@@ -1,0 +1,36 @@
+@page "/"
+@inject IConfiguration Configuration
+
+<PageTitle>Inicio · @NombreSitio</PageTitle>
+
+<HeroBanner Eslogan="@Configuration["Sitio:Eslogan"]"
+            ImagenUrl="img/hero.svg"
+            TextoBoton="Explorar apartamentos"
+            UrlBoton="apartamentos" />
+
+<section class="container caracteristicas">
+    @foreach (var caracteristica in caracteristicas)
+    {
+        <TarjetaCaracteristica Icono="@caracteristica.Icono" Titulo="@caracteristica.Titulo">
+            @caracteristica.Descripcion
+        </TarjetaCaracteristica>
+    }
+</section>
+
+<div class="container">
+    <ResumenCatalogo />
+</div>
+
+@code {
+    [CascadingParameter(Name = "NombreSitio")]
+    public string NombreSitio { get; set; } = string.Empty;
+
+    private record Caracteristica(string Icono, string Titulo, string Descripcion);
+
+    private readonly List<Caracteristica> caracteristicas =
+    [
+        new("🏢", "Residenciales seleccionados", "Conoce cada residencial con su ubicación y descripción."),
+        new("🔎", "Filtros rápidos", "Encuentra apartamentos por residencial y disponibilidad."),
+        new("⚡", "Información al día", "Los datos se consultan en tiempo real desde nuestro Web API.")
+    ];
+}

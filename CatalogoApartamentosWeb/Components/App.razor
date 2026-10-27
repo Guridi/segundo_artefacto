@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <ResourcePreloader />
+    <link rel="stylesheet" href="@Assets["lib/bootstrap/dist/css/bootstrap.min.css"]" />
+    <link rel="stylesheet" href="@Assets["app.css"]" />
+    <link rel="stylesheet" href="@Assets["css/site.css"]" />
+    <link rel="stylesheet" href="@Assets["CatalogoApartamentosWeb.styles.css"]" />
+    <ImportMap />
+    <link rel="icon" type="image/svg+xml" href="img/logo.svg" />
+    <HeadOutlet @rendermode="renderMode" />
+</head>
+
+<body>
+    <Routes @rendermode="renderMode" />
+    <ReconnectModal />
+    <script src="@Assets["_framework/blazor.web.js"]"></script>
+    <script src="@Assets["js/site.js"]"></script>
+</body>
+
+</html>
+
+@code {
+    // Sin prerenderizado para que cada página consulte el API una sola vez.
+    private static readonly IComponentRenderMode renderMode =
+        new InteractiveServerRenderMode(prerender: false);
+}

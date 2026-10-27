@@ -1,0 +1,51 @@
+<div class="table-responsive tabla-apartamentos">
+    <table class="table table-hover align-middle">
+        <thead>
+            <tr>
+                <th>Número</th>
+                <th>Residencial</th>
+                <th class="text-center">Habitaciones</th>
+                <th class="text-center">Baños</th>
+                <th class="text-end">Precio</th>
+                <th class="text-center">Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var apartamento in Apartamentos)
+            {
+                <tr class="@(apartamento.Id == IdResaltado ? "resaltado" : "")">
+                    <td><strong>@apartamento.Numero</strong></td>
+                    <td>@NombreResidencial(apartamento.ResidencialId)</td>
+                    <td class="text-center">@apartamento.Habitaciones</td>
+                    <td class="text-center">@apartamento.Banos</td>
+                    <td class="text-end">@($"$ {apartamento.Precio:N2}")</td>
+                    <td class="text-center">
+                        @if (apartamento.Disponible)
+                        {
+                            <span class="badge text-bg-success">Disponible</span>
+                        }
+                        else
+                        {
+                            <span class="badge text-bg-secondary">Ocupado</span>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<p class="text-muted small">Mostrando @Apartamentos.Count @(Apartamentos.Count == 1 ? "apartamento" : "apartamentos").</p>
+
+@code {
+    [Parameter]
+    public List<Apartamento> Apartamentos { get; set; } = [];
+
+    [Parameter]
+    public List<Residencial> Residenciales { get; set; } = [];
+
+    [Parameter]
+    public int? IdResaltado { get; set; }
+
+    private string NombreResidencial(int residencialId) =>
+        Residenciales.FirstOrDefault(r => r.Id == residencialId)?.Nombre ?? $"#{residencialId}";
+}

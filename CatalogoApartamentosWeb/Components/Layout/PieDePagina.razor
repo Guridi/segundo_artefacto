@@ -1,0 +1,28 @@
+@inject IConfiguration Configuration
+@inject IJSRuntime JS
+
+<footer class="pie">
+    <div class="container pie-contenido">
+        <div>
+            <strong>@NombreSitio</strong>
+            <p>Segundo artefacto · Blazor + Web API</p>
+        </div>
+        <div>
+            <p>Contacto: @Configuration["Sitio:Contacto"]</p>
+            <p>&copy; @DateTime.Now.Year · Todos los derechos reservados</p>
+        </div>
+        <button class="btn btn-outline-light btn-sm" type="button" @onclick="VolverArriba">
+            ↑ Volver arriba
+        </button>
+    </div>
+</footer>
+
+@code {
+    [CascadingParameter(Name = "NombreSitio")]
+    public string NombreSitio { get; set; } = string.Empty;
+
+    private async Task VolverArriba()
+    {
+        await JS.InvokeVoidAsync("catalogo.volverArriba");
+    }
+}

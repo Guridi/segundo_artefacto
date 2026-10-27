@@ -1,0 +1,31 @@
+@inherits LayoutComponentBase
+@inject IConfiguration Configuration
+
+<CascadingValue Value="nombreSitio" Name="NombreSitio">
+    <div class="sitio">
+        <EncabezadoSitio />
+
+        <main class="contenido">
+            @Body
+        </main>
+
+        <PieDePagina />
+    </div>
+</CascadingValue>
+
+<div id="toast-catalogo" class="toast-catalogo" role="status" aria-live="polite"></div>
+
+<div id="blazor-error-ui" data-nosnippet>
+    Ocurrió un error inesperado.
+    <a href="." class="reload">Recargar</a>
+    <span class="dismiss">🗙</span>
+</div>
+
+@code {
+    private string nombreSitio = string.Empty;
+
+    protected override void OnInitialized()
+    {
+        nombreSitio = Configuration["Sitio:Nombre"] ?? "Catálogo de Apartamentos";
+    }
+}

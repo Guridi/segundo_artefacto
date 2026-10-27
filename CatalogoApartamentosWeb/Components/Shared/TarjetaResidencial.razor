@@ -1,0 +1,27 @@
+<article class="tarjeta-residencial">
+    <img src="img/residencial.svg" alt="Residencial @Residencial.Nombre" />
+    <div class="cuerpo">
+        <h3>@Residencial.Nombre</h3>
+        <p class="ubicacion">📍 @Residencial.Ubicacion</p>
+        <p>@Residencial.Descripcion</p>
+    </div>
+    <div class="pie-tarjeta">
+        <span class="badge text-bg-light">
+            @CantidadApartamentos @(CantidadApartamentos == 1 ? "apartamento" : "apartamentos")
+        </span>
+        <button class="btn btn-primary btn-sm" @onclick="() => OnVerApartamentos.InvokeAsync(Residencial.Id)">
+            Ver apartamentos
+        </button>
+    </div>
+</article>
+
+@code {
+    [Parameter, EditorRequired]
+    public Residencial Residencial { get; set; } = default!;
+
+    [Parameter]
+    public int CantidadApartamentos { get; set; }
+
+    [Parameter]
+    public EventCallback<int> OnVerApartamentos { get; set; }
+}

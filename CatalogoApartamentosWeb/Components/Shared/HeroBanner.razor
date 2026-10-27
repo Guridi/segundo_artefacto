@@ -1,0 +1,28 @@
+<section class="hero">
+    <div class="container hero-contenido">
+        <div class="hero-texto">
+            <span class="hero-etiqueta">Bienvenido a</span>
+            <h1>@NombreSitio</h1>
+            <p>@Eslogan</p>
+            <a class="btn btn-light btn-lg" href="@UrlBoton">@TextoBoton</a>
+        </div>
+        <img class="hero-imagen" src="@ImagenUrl" alt="Ilustración de edificios residenciales" />
+    </div>
+</section>
+
+@code {
+    [CascadingParameter(Name = "NombreSitio")]
+    public string NombreSitio { get; set; } = string.Empty;
+
+    [Parameter]
+    public string Eslogan { get; set; } = string.Empty;
+
+    [Parameter]
+    public string ImagenUrl { get; set; } = "img/hero.svg";
+
+    [Parameter]
+    public string TextoBoton { get; set; } = "Ver catálogo";
+
+    [Parameter]
+    public string UrlBoton { get; set; } = "apartamentos";
+}

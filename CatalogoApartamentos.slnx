@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="CatalogoApartamentosAPI/CatalogoApartamentosAPI.csproj" />
+  <Project Path="CatalogoApartamentosWeb/CatalogoApartamentosWeb.csproj" />
+</Solution>

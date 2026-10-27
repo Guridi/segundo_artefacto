@@ -1,0 +1,27 @@
+<div class="buscador">
+    <input class="form-control form-control-lg"
+           type="search"
+           placeholder="Buscar por nombre o ubicación…"
+           @bind="texto"
+           @bind:event="oninput"
+           @bind:after="NotificarBusqueda" />
+    @if (!string.IsNullOrEmpty(texto))
+    {
+        <button class="btn btn-outline-secondary" type="button" @onclick="Limpiar">Limpiar</button>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public EventCallback<string> OnBuscar { get; set; }
+
+    private string texto = string.Empty;
+
+    private Task NotificarBusqueda() => OnBuscar.InvokeAsync(texto);
+
+    private async Task Limpiar()
+    {
+        texto = string.Empty;
+        await NotificarBusqueda();
+    }
+}

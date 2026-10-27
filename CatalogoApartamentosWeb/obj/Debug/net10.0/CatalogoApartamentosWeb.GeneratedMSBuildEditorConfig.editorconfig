@@ -1,0 +1,107 @@
+is_global = true
+build_property.TargetFramework = net10.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v10.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CatalogoApartamentosWeb
+build_property.RootNamespace = CatalogoApartamentosWeb
+build_property.ProjectDir = /home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosWeb/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosWeb
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 10.0
+build_property.EnableCodeStyleSeverity = 
+
+[/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosWeb/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosWeb/Components/Layout/EncabezadoSitio.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvRW5jYWJlemFkb1NpdGlvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosWeb/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosWeb/Components/Layout/PieDePagina.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvUGllRGVQYWdpbmEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosWeb/Components/Pages/Apartamentos.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9BcGFydGFtZW50b3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosWeb/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosWeb/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ib21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosWeb/Components/Pages/NotFound.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ob3RGb3VuZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosWeb/Components/Pages/Residenciales.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9SZXNpZGVuY2lhbGVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosWeb/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Sb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosWeb/Components/Shared/BuscadorResidencial.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TaGFyZWQvQnVzY2Fkb3JSZXNpZGVuY2lhbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosWeb/Components/Shared/FormularioApartamento.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TaGFyZWQvRm9ybXVsYXJpb0FwYXJ0YW1lbnRvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosWeb/Components/Shared/HeroBanner.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TaGFyZWQvSGVyb0Jhbm5lci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosWeb/Components/Shared/MensajeEstado.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TaGFyZWQvTWVuc2FqZUVzdGFkby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosWeb/Components/Shared/PanelFiltros.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TaGFyZWQvUGFuZWxGaWx0cm9zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosWeb/Components/Shared/ResumenCatalogo.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TaGFyZWQvUmVzdW1lbkNhdGFsb2dvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosWeb/Components/Shared/TablaApartamentos.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TaGFyZWQvVGFibGFBcGFydGFtZW50b3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosWeb/Components/Shared/TarjetaCaracteristica.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TaGFyZWQvVGFyamV0YUNhcmFjdGVyaXN0aWNhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosWeb/Components/Shared/TarjetaResidencial.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TaGFyZWQvVGFyamV0YVJlc2lkZW5jaWFsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosWeb/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9fSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/antoniog/Documents/Codigo/Prog 2/CatalogoApartamentosWeb/Components/Layout/ReconnectModal.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvUmVjb25uZWN0TW9kYWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-mmwd3svsec
