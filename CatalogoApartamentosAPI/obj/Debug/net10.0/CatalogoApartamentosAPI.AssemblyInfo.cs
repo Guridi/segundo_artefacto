@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CatalogoApartamentosAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb885f7a9b61a29d7432c240870d36c415f28342")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f96b58a4d7aa440e887778ceb06941ea574ca95f")]
 [assembly: System.Reflection.AssemblyProductAttribute("CatalogoApartamentosAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CatalogoApartamentosAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
